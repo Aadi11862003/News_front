@@ -6,7 +6,7 @@ const VideoList = () => {
   const videoRefs = useRef([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/videos')
+    fetch('https://autonewsinbackend.onrender.com/videos')
       .then(response => response.json())
       .then(data => setVideos(data))
       .catch(err => console.log(err));
